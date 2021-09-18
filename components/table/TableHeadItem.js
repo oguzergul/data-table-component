@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import CustomText from "../global/CustomText";
 
-const TableHeadItem = ({title}) => {
+const TableHeadItem = ({title,key}) => {
     const TableHeadItem = styled.th`
       position: sticky;
       top: 0;
@@ -17,7 +17,7 @@ const TableHeadItem = ({title}) => {
       }
     `;
     return (
-        <TableHeadItem>
+        <TableHeadItem key={key}>
             <CustomText text={title}/>
         </TableHeadItem>
     )

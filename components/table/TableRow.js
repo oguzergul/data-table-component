@@ -1,8 +1,8 @@
 import TableCell from "./TableCell";
 
-const TableRow = ({data}) => {
+const TableRow = ({data,key}) => {
     return (
-        <tr key={data.title}>
+        <tr key={key}>
             <TableCell image={data.image} textOne={data.name} textTwo={data.email}/>
             <TableCell textOne={data.title} textTwo={data.department}/>
             <TableCell status={data.status} />
