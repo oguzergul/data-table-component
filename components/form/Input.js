@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import Label from "./Label";
 
-const CustomInputs = styled.input`
+const CustomInput = styled.input`
   width: 100%;
   height: 42px;
   background: #FFFFFF;
@@ -23,19 +24,14 @@ const CustomInputs = styled.input`
     color: #6B7280;
   }
 `;
-const CustomLabels = styled.label`
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  color: #374151;
-`;
-const CustomInput = ({placeholder, type, label, onChange, name}) => {
+
+const Input = (props) => {
     return (
         <>
-            <CustomLabels>{label}</CustomLabels>
-            <CustomInputs name={name} onChange={onChange} placeholder={placeholder} type={type}/>
+            <Label label={props.label}/>
+            <CustomInput name={props.name} onChange={props.onChange} placeholder={props.placeholder} type={props.type}/>
         </>
     )
 
 }
-export default CustomInput;
+export default Input;
