@@ -17,13 +17,13 @@ const SlideOvers = styled.div`
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   height: 100%;
   & .slide-header {
-    padding: 16px;
+    padding: 10px 28px;
     background: #F3F4F6;
     border-bottom: 1px solid #E5E7EB;
   }
 
   & .slide-footer {
-    padding: 12px 16px;
+    padding: 30px 16px;
     background: #F9FAFB;
 
     & button {
