@@ -66,7 +66,7 @@ function Home() {
         <>
             <Container>
                 <SubHeader handleButton={toggleSlide} title="Data List Component" buttonText="ADD NEW"/>
-                <span>Change First Row Width => </span>
+                <span>Change First Row Width - </span>
 
                 <input min={100} max={500} type="range" onChange={getWidthRange}/>
                 <Table width={rowWidth} head={tableHeader} body={tableBody}/>
