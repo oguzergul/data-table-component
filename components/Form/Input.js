@@ -8,13 +8,13 @@ const CustomInputs = styled.input`
   border: 1px solid #D1D5DB;
   margin-bottom: 10px;
   margin-top: 10px;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   padding-left: 20px;
   box-sizing: border-box;
 
   :focus {
     border: 1px solid #6366F1 !important;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px #6366F1 !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 1px #6366F1 !important;
   }
 
   ::placeholder {
@@ -38,5 +38,4 @@ const CustomInput = ({placeholder, type, label, onChange, name}) => {
     )
 
 }
-
 export default CustomInput;
