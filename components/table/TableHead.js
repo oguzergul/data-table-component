@@ -1,8 +1,8 @@
 import TableHeadItem from "./TableHeadItem";
-const TableHead = ({headData}) => {
+const TableHead = (props) => {
     return (
         <thead>
-            <tr>{headData.map((item,index) => <TableHeadItem key={index} title={item.title}/>)}</tr>
+            <tr>{props.headData.map((item,index) => <TableHeadItem width={props.width} key={index} title={item.title}/>)}</tr>
         </thead>
     )
 }
