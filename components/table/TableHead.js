@@ -1,5 +1,4 @@
 import TableHeadItem from "./TableHeadItem";
-
 const TableHead = ({headData}) => {
     return (
         <thead>

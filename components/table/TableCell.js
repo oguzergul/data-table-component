@@ -10,11 +10,9 @@ const TableCells = styled.td`
   border: none;
   border-bottom: 1px solid #E5E7EB;
   width: ${props => props.width || ""};
-
   & .cell-inner {
     margin-left: ${props => props.hasImage ? '1rem' : 0};
   }
-
   :first-child {
     position: sticky;
     left: 0;
