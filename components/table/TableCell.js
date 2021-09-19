@@ -1,15 +1,14 @@
 import styled from "styled-components";
 import Avatar from "../global/Avatar";
-import CustomText from "../global/CustomText";
+import CustomText from "../form/Text";
 import StatusBadge from "../global/StatusBadge";
 
 
 const TableCells = styled.td`
   display: ${props => props.hasImage ? 'flex' : ''};
   align-items: ${props => props.hasImage ? 'center' : ''};
+  width: ${props => props.width};
   border: none;
-  border-bottom: 1px solid #E5E7EB;
-  width: ${props => props.width || ""};
   & .cell-inner {
     margin-left: ${props => props.hasImage ? '1rem' : 0};
   }
@@ -17,8 +16,11 @@ const TableCells = styled.td`
     position: sticky;
     left: 0;
     z-index: 1;
-    background: #ffffff;
+    background: #fff;
   }
+  
+  
+  
 `;
 
 
@@ -29,7 +31,7 @@ const TableCell = ({image, textOne, textTwo, status,width}) => {
             {textTwo ?
                 <div className='cell-inner'>
                     <CustomText type={'primary'} text={textOne}/>
-                    <CustomText text={textTwo}/>
+                    <CustomText type={'secondary'} text={textTwo}/>
                 </div> : ''}
             {status ? <StatusBadge status={status}/> : ''}
 

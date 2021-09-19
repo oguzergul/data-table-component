@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import CustomText from "../global/CustomText";
+import CustomText from "../form/Text";
 const TableHeadItems = styled.th`
       position: sticky;
       top: 0;
@@ -17,7 +17,7 @@ const TableHeadItems = styled.th`
 const TableHeadItem = ({title}) => {
     return (
         <TableHeadItems>
-            <CustomText text={title}/>
+            <CustomText type={'secondary'} text={title}/>
         </TableHeadItems>
     )
 }
