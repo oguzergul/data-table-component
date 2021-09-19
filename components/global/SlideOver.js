@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Button from "../Form/Button";
 
 const SlideOvers = styled.div`
   display: flex;
@@ -15,8 +16,9 @@ const SlideOvers = styled.div`
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 
   & .slide-header {
-    padding: 12px 16px;
+    padding: 16px;
     background: #F3F4F6;
+    border-bottom:1px solid #E5E7EB ;
   }
 
   & .slide-footer {
@@ -39,17 +41,27 @@ const SlideOvers = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
+    h2 {
+      font-size: 28px;
+    }
+    
+    span {
+      color:#4F46E5FF;
+      font-weight: bolder;
+      cursor: pointer;
+    }
   }
 `;
 
-const SlideOver = (props, {clickMe}) => {
+const SlideOver = (props) => {
 
     return (
         <SlideOvers>
             <div className='slide-header'>
                 <div className='header-inner'>
-                    <h3>Add New Row</h3>
-                    <span onClick={clickMe}>Kapat</span>
+                    <h2>Add New Row</h2>
+                    <span onClick={props.handleClose}>Kapat</span>
                 </div>
             </div>
 
@@ -58,7 +70,7 @@ const SlideOver = (props, {clickMe}) => {
             </div>
 
             <div className='slide-footer'>
-                <button>Save</button>
+                <Button text="Save" handleClick={props.handleSubmit}/>
             </div>
 
         </SlideOvers>
