@@ -12,7 +12,10 @@ const GlobalStyle = createGlobalStyle`
       text-align: left;
       white-space: nowrap;
     }
+     
+    
     
   }
+  
 `
 export default GlobalStyle;

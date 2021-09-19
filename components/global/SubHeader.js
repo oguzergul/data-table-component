@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import Button from "../Form/Button";
-import CustomText from "./CustomText";
+import Button from "../form/Button";
+import CustomText from "../form/Text";
 
 const SubHeaders = styled.div`
   display: flex;

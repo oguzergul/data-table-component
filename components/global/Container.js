@@ -5,7 +5,7 @@ const MainContainer = styled.div`;
   height: 100%;
   max-width: 1080px !important;
   margin: 0 auto;
-  padding-top: 30px;
+  padding: 35px 0;
 `;
 const Container = (props) => {
     return (<MainContainer>{props.children}</MainContainer>)
