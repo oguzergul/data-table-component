@@ -19,14 +19,15 @@ const GlobalStyle = createGlobalStyle`
       align-items: center;
       padding: 13px 25px;
       height: 42px;
+      width: 200px;
       background: #4F46E5;
       border-radius: 4px;
-      width: 100%;
       font-weight: 500;
       font-size: 14px;
       line-height: 20px;
       color: #FFFFFF;
       border:none;
+      cursor:pointer;
       :focus {
         box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #6366F1;
       }

@@ -3,7 +3,7 @@ import TableHeadItem from "./TableHeadItem";
 const TableHead = ({headData}) => {
     return (
         <thead>
-            <tr>{headData.map(item => <TableHeadItem key={item.id} title={item.title}/>)}</tr>
+            <tr>{headData.map((item,index) => <TableHeadItem key={index} title={item.title}/>)}</tr>
         </thead>
     )
 }

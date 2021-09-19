@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-const TableWrapper = (props) => {
-    const TableWrapper = styled.table`
+const TableWrappers = styled.table`
       white-space: nowrap;
-      margin: 100px auto;
+      margin: 0 auto;
       border: 1px solid #E5E7EB;
       border-collapse: separate;
       border-spacing: 0;
@@ -14,7 +13,8 @@ const TableWrapper = (props) => {
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
     `;
 
-    return (<TableWrapper>{props.children}</TableWrapper>)
+const TableWrapper = (props) => {
+    return (<TableWrappers>{props.children}</TableWrappers>)
 }
 
 export default TableWrapper;

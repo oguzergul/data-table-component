@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
-const CustomText = ({text, primary, secondary}) => {
-    const CustomText = styled.span`
+const CustomTexts = styled.span`
       display: block;
       font-style: normal;
       font-weight: 500;
       line-height: 20px;
-      font-size: ${primary ? '14px' : '12px' };
-      color: ${primary ? "#111827" : secondary ? "#4F46E5" : "#6B7280"};
+      font-size: ${props => props.type === 'primary' ? '14px' : '12px'};
+      color: ${props => props.type  === 'primary'  ? "#111827" : props.type === 'secondary' ? "#4F46E5" : "#6B7280"};
     `
-    return <CustomText>{text}</CustomText>
+
+const CustomText = ({text, type}) => {
+    return <CustomTexts type={type}>{text}</CustomTexts>
 }
 
 export default CustomText;
